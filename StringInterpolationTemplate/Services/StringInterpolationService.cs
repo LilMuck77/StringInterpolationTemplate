@@ -28,52 +28,115 @@ public class StringInterpolationService : IStringInterpolationService
 
     public string Number02()
     {
-        throw new NotImplementedException();
+        var date = _date.Now.ToString("yyyy.MM.dd");
+        var answer = $"{date}";
+        Console.WriteLine(answer);
+
+         return answer;
     }
 
     public string Number03()
     {
-        throw new NotImplementedException();
+        var date = _date.Now.ToString("dd of MMMM, yyyy");
+        var answer = $"{date}";
+        Console.WriteLine(answer);
+
+         return answer;
+       
+
     }
 
     public string Number04()
     {
-        throw new NotImplementedException();
+         var date = _date.Now.ToString("Year: yyyy, Month: MM, Day: dd");
+        var answer = $"{date}";
+        Console.WriteLine(answer);
+
+         return answer;
+       
     }
 
     public string Number05()
     {
-        throw new NotImplementedException();
+        var date = _date.Now.ToString($"dddd");
+        var answer = $"{date,17}";
+        Console.WriteLine(answer);
+
+         return answer;
+
+
+   
     }
 
     public string Number06()
     {
-        throw new NotImplementedException();
+         var date = _date.Now.ToString($"h:mm tt dddd");
+        var answer = $"{date, 10}";
+        Console.WriteLine(answer);
+
+         return answer;
+
+       
     }
 
     public string Number07()
     {
-        throw new NotImplementedException();
+        var date = _date.Now.ToString($"h: hh, m: mm, s: ss");
+        var answer = $"{date}";
+        Console.WriteLine(answer);
+
+         return answer;
+
+        
     }
 
     public string Number08()
     {
-        throw new NotImplementedException();
+       var date = _date.Now.ToString($"yyyy.MM.dd.hh.mm.ss");
+        var answer = $"{date}";
+        Console.WriteLine(answer);
+
+         return answer;
+        
+
     }
 
     public string Number09()
     {
-        throw new NotImplementedException();
+        var pi = 3.14;
+        var date = _date.Now.ToString($"{pi:C}");
+        var answer = $"{date}";
+        Console.WriteLine(answer);
+
+         return answer;
+        
+
     }
 
     public string Number10()
     {
-        throw new NotImplementedException();
+        var pi = 3.14;
+        var date = _date.Now.ToString($"{pi,10:f3}");
+        var answer = $"{date}";
+        Console.WriteLine(answer);
+
+         return answer;
+        
+
     }
 
     public string Number11()
     {
-        throw new NotImplementedException();
+        var squareRoot = Math.Sqrt(2);
+        var answer = $"{squareRoot:X2}";
+        Console.WriteLine(answer);
+
+         return answer;
+
+        //1.6A09E667F3BCC908B2F
+           
+
+
     }
 
     //2.2019.01.22
